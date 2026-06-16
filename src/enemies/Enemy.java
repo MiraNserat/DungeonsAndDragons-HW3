@@ -4,6 +4,7 @@ import GameBoard.Position;
 import combat.CombatResult;
 import players.Player;
 import units.Unit;
+import GameBoard.OccupantVisitor;
 
 public abstract class Enemy extends Unit{
     private int experienceValue;
@@ -23,5 +24,9 @@ public abstract class Enemy extends Unit{
     public String description() {
         return super.description() +
                 " Experience Value: " + experienceValue;
+    }
+    @Override
+    public void accept(OccupantVisitor visitor) {
+        visitor.visit(this);
     }
 }
