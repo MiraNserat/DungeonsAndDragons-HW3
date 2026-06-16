@@ -1,4 +1,5 @@
 package units;
+import GameBoard.Position;
 
 public abstract class Unit implements Occupant {
     private String name;
