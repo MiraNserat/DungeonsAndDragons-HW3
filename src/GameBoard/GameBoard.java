@@ -47,4 +47,16 @@ public class GameBoard {
         }
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        for(int i = 0; i < gameTiles.length; i++) {
+            for (int j = 0; j < gameTiles[i].length; j++)
+                sb.append(gameTiles[i][j].toString());
+            sb.append("\n");
+        }
+
+        return sb.toString();
+    }
 }
