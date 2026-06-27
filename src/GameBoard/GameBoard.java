@@ -1,5 +1,5 @@
 package GameBoard;
-
+import units.*;
 import java.util.NoSuchElementException;
 
 public class GameBoard {

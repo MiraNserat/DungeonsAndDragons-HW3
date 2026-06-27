@@ -5,6 +5,7 @@ public class Floor extends Cell{
 
     public Floor(Position p) {
         super(p);
+        occupant = null;
     }
 
     public Occupant getOccupant() {
