@@ -9,6 +9,11 @@ public class Position {
         this.y = y;
     }
 
+    public double Range(Position q){
+        double range = Math.pow((x - q.x),2) + Math.pow((y - q.y),2);
+        return Math.sqrt(range);
+    }
+
     public int getX() {
         return x;
     }
